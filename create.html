@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome to Note App{% endblock %}
+
+{% block content %}
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<form action= "" method="POST">
+						<fieldset>
+							<legend>
+								Add Note
+							</legend>>
+							<div class = "form-group">
+								<input class="form-control" type="text" name="title" placeholder="Title">
+							</div>
+							<div class = "form-group">
+								<textarea class="form-control" type="text" name="note" placeholder="leave your note here" rows= "10"></textarea>
+							</div>
+						</fieldset>
+						<div class="form-group">
+							<button class = "btn btn-primary">Add Note</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-6">
+					</h4 class ="mb-3">My Notes</h4>
+					<div class = "card">
+						<div class = "card-body">
+							<h5 class = "card-title">Title</h5>
+							<small class = "card-subtitle">Date</small>
+							<p class = "car">Notes</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
